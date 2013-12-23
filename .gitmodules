@@ -31,3 +31,9 @@
 [submodule "cookbooks/aws"]
 	path = cookbooks/aws
 	url = https://github.com/opscode-cookbooks/aws.git
+[submodule "cookbooks/maven"]
+	path = cookbooks/maven
+	url = https://github.com/opscode-cookbooks/maven.git
+[submodule "cookbooks/ark"]
+	path = cookbooks/ark
+	url = https://github.com/opscode-cookbooks/ark.git
