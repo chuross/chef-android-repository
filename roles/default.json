@@ -2,7 +2,17 @@
 	"name": "android-ubuntu",
 	"json_class": "Chef::Role",
 	"chef_type": "role",
+	"override_attributes": {
+		"java": {
+			"install_flavor": "oracle",
+			"jdk_version": "7",
+			"oracle": {
+				"accept_oracle_download_terms": true
+			}
+		}
+	},
 	"run_list": [
-		"recipe[git]"
+		"recipe[git]",
+		"recipe[java]"
 	]
 }

@@ -25,3 +25,9 @@
 [submodule "cookbooks/powershell"]
 	path = cookbooks/powershell
 	url = https://github.com/opscode-cookbooks/powershell.git
+[submodule "cookbooks/java"]
+	path = cookbooks/java
+	url = https://github.com/socrata-cookbooks/java.git
+[submodule "cookbooks/aws"]
+	path = cookbooks/aws
+	url = https://github.com/opscode-cookbooks/aws.git
