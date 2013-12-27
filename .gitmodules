@@ -37,3 +37,12 @@
 [submodule "cookbooks/ark"]
 	path = cookbooks/ark
 	url = https://github.com/opscode-cookbooks/ark.git
+[submodule "cookbooks/eclipse"]
+	path = cookbooks/eclipse
+	url = https://github.com/geocent-cookbooks/eclipse.git
+[submodule "cookbooks/chef-android-sdk"]
+	path = cookbooks/chef-android-sdk
+	url = https://github.com/gildegoma/chef-android-sdk.git
+[submodule "cookbooks/chef-gui"]
+	path = cookbooks/chef-gui
+	url = https://github.com/chuross/chef-gui.git

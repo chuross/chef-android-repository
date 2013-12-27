@@ -18,11 +18,46 @@
 				"checksum": "077ed466455991d5abb4748a1d022e2d2a54dc4d557c723ecbacdc857c61d51b",
 				"plugin_version": "2.5"
 			}
+		},
+		"eclipse": {
+			"version": "kepler",
+			"suite": "java",
+			"plugins": [
+				{ "http://download.eclipse.org/releases/kepler": "org.eclipse.egit.feature.group" },
+				{ "http://download.eclipse.org/releases/kepler": "org.eclipse.cdt.feature.group" },
+				{ "http://download.eclipse.org/releases/kepler": "org.eclipse.cdt.platform.feature.group" },
+				{ "http://download.eclipse.org/releases/kepler": "org.eclipse.cdt.gnu.dsf.feature.group" },
+				{ "http://download.eclipse.org/releases/kepler": "org.eclipse.cdt.gnu.build.feature.group" },
+				{ "http://download.eclipse.org/releases/kepler": "org.eclipse.cdt.gdb.feature.group" },
+				{ "http://download.eclipse.org/technology/m2e/releases": "org.eclipse.m2e.feature.feature.group" },
+				{ "http://vrapper.sourceforge.net/update-site/stable": "net.sourceforge.vrapper.feature.group" },
+				{ "http://findbugs.cs.umd.edu/eclipse": "edu.umd.cs.findbugs.plugin.eclipse.feature.group" },
+				{ "http://eclipse-cs.sf.net/update": "net.sf.eclipsecs.feature.group" },
+				{ "https://dl-ssl.google.com/android/eclipse/": "com.android.ide.eclipse.ddms.feature.group" },
+				{ "https://dl-ssl.google.com/android/eclipse/": "com.android.ide.eclipse.adt.feature.group" },
+				{ "https://dl-ssl.google.com/android/eclipse/": "com.android.ide.eclipse.hierarchyviewer.feature.group" },
+				{ "https://dl-ssl.google.com/android/eclipse/": "com.android.ide.eclipse.ndk.feature.group" },
+				{ "https://dl-ssl.google.com/android/eclipse/": "com.android.ide.eclipse.traceview.feature.group" },
+				{ "https://dl-ssl.google.com/android/eclipse/": "com.android.ide.eclipse.gldebugger.feature.group" }
+			]
+		},
+		"android-sdk": {
+			"name": "android-sdk",
+			"components": [
+				"platform-tools",
+				"build-tools-19.0.0",
+				"android-15",
+				"extra-android-support",
+				"extra-google-google_play_services"
+			]
 		}
 	},
 	"run_list": [
 		"recipe[git]",
 		"recipe[java]",
-		"recipe[maven]"
+		"recipe[maven]",
+		"recipe[eclipse]",
+		"recipe[chef-android-sdk]",
+		"recipe[chef-gui::ja]"
 	]
 }
