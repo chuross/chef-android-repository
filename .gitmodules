@@ -46,3 +46,6 @@
 [submodule "cookbooks/chef-gui"]
 	path = cookbooks/chef-gui
 	url = https://github.com/chuross/chef-gui.git
+[submodule "cookbooks/chef-pleiades"]
+	path = cookbooks/chef-pleiades
+	url = https://github.com/chuross/chef-pleiades.git

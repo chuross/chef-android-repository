@@ -56,7 +56,7 @@
 		"recipe[git]",
 		"recipe[java]",
 		"recipe[maven]",
-		"recipe[eclipse]",
+		"recipe[chef-pleiades]",
 		"recipe[chef-android-sdk]",
 		"recipe[chef-gui::ja]"
 	]
